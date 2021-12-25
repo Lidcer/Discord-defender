@@ -1,0 +1,19 @@
+{
+    "name": "discord-defender",
+    "version": "1.0.0",
+    "description": "Software that is monitoring infected files and tries to restore them",
+    "main": "./dist/main/main.js",
+    "author": {
+      "name": "Lidcer",
+      "email": "thelidcer@gmail.com",
+      "url": "https://github.com/Lidcer"
+    },
+    "scripts": {
+      "electron-rebuild": "node -r ts-node/register ../../.erb/scripts/electron-rebuild.js",
+      "link-modules": "node -r ts-node/register ../../.erb/scripts/link-modules.ts",
+      "postinstall": "npm run electron-rebuild && npm run link-modules"
+    },
+    "dependencies": {},
+    "license": "MIT"
+  }
+  
